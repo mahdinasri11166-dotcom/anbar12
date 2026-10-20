@@ -60,25 +60,26 @@
             android:padding="14dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- دکمه افزودن دستی -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnManualPos"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="＋  افزودن دستی کالا یا خدمت"
+        app:cornerRadius="12dp"
+        app:strokeColor="@color/primary" />
+
     <!-- سبد خرید -->
     <androidx.recyclerview.widget.RecyclerView
-        
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnManualPos"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="＋  افزودن دستی کالا یا خدمت"
-            app:cornerRadius="12dp"
-            app:strokeColor="@color/primary" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerCart"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:padding="4dp" />
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp" />
 
     <TextView
         android:id="@+id/tvEmptyCart"
